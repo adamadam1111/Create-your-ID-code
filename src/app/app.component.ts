@@ -8,7 +8,7 @@ import { v4 as uuidv4 } from 'uuid';
 })
 export class AppComponent {
   id: string = uuidv4();
-  name: string = 'Paweł2';
+  name: string = 'Anna';
 
   wygeneruj(): void {
     this.id = uuidv4();
