@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { v4 as uuidv4 } from 'uuid';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'zadanie1';
+  id: string = uuidv4();
+  name: string = 'Paweł2';
+
+  wygeneruj(): void {
+    this.id = uuidv4();
+  }
 }
